@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhaW5rLXRlYS1lZGFuIiwiZW1haWwiOiJhaW5rQGNvbnRvaC5jb20iLCJpYXQiOjE2OTM3MjE5NzIsImV4cCI6MTY5MzcyMTk5Mn0.EQjg0oEuCxF0otgMLwncTd-x6W-gLiJlUI5eH7HPFdE
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "aink-tea-edan",
+    "email": "aink@contoh.com",
+    "password": "1234",
+    "confPassword": "1237"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "aink@contoh.com",
+    "password": "1234"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
